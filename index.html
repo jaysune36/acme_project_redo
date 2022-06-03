@@ -16,15 +16,17 @@
 <body class="grid">
   <!-- Header -->
   <header>
+    <!-- Header Container -->
+    <div class="contain">
     <!-- Logo-cart Container -->
-    <div class="flex-space">
+    <div class="logo-cart flex-space">
     <div class="logo">
       <img src="/images/acme-logo.jpg" alt="acme-logo">
     </div>
     <!-- Shopping Cart Container -->
     <div class="cart">
       <div class="shopping-cart">
-        <svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'>
+        <svg viewBox="0 0 24 24" xmlns='http://www.w3.org/2000/svg'>
           <g fill='none' fill-rule='evenodd'>
             <path d='M0 0h24v24H0z' />
             <path
@@ -38,13 +40,11 @@
       <!-- Logo-cart Container -->
     </div>
     <!-- Nav-Search field Container -->
-    <div class="search flex-space">
+    <div class="search flex-col">
       <nav>
-        <ul>
           <li>EXPLOSIVES</li>
           <li>ACCESSORIES</li>
           <li>SALE</li>
-        </ul>
       </nav>
       <div class="search-bar">
         <!-- Search Value is a place holder for now as I will change this to an SVG -->
@@ -54,10 +54,14 @@
       </div>
       <!--/ Nav-Search field Container -->
     </div>
+    <!--/ Header Container -->
+    </div>
     <!-- /Header -->
   </header>
   <!-- Main Body Container -->
   <main id="main-body" class="main-grid">
+    <!-- Main Container -->
+    <div class="contain">
     <!-- Main Body Header(h1) Container -->
     <div class="col">
       <h1>Acme Homepage</h1>
@@ -117,16 +121,22 @@
         <!--/ Latest Product Images -->
       </div>
     </div>
+    <!--/ Main Container -->
+  </div>
     <!--/ Main Body Container -->
   </main>
   <!-- Footer Container -->
   <footer>
+    <!-- Footer Container -->
+    <div class="contain">
     <ul>
       <li>Privacy</li>
       <li>Legal</li>
       <li>Terms</li>
     </ul>
-    <p>&copy; Acme Products</p>
+    <p>&copy; 2022 Acme Products</p>
+    <!-- Main Container -->
+  </div>
     <!--/ Footer Container  -->
   </footer>
   <script src="/js/app.js"></script>

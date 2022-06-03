@@ -365,17 +365,54 @@ template {
 body {
   text-align: center;
   font-family: "Barlow", sans-serif;
-  width: 90%;
-  margin: 0 auto;
 }
 
-ul {
+ul,
+nav {
   list-style-type: none;
 }
 
 /*=====================================
         COMPENENTS PARTIALS
 ======================================*/
+/*=====================================
+        LAYOUT
+======================================*/
+.contain {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #c4c4c4;
+}
+
+header {
+  border-bottom: 4px dotted #000;
+}
+
+footer {
+  border-top: 4px dotted #000;
+}
+
+.logo-cart {
+  margin: 1rem 0;
+}
+
+.search nav {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
 /*=====================================
         IMAGES
 ======================================*/
@@ -386,8 +423,18 @@ img {
 /*=====================================
         BUTTONS
 ======================================*/
-.cart {
-  background-color: red;
+.shopping-cart {
+  background-color: #FA2010;
+  width: 20%;
+  min-width: 50px;
+  padding: 0.5rem;
+  margin-left: auto;
+}
+
+svg {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 /*=====================================
@@ -407,8 +454,22 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+.flex-space .logo {
+  flex: 0 0 70%;
+}
 
-.search ul {
+.flex-col {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.search nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

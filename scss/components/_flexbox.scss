@@ -3,16 +3,27 @@
 ======================================*/
 
 .flex-space {
-  display: $flex-dsp;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-between;
+  & .logo {
+    flex: 0 0 70%;
+  }
+}
+.flex-col {
+  @include flex-col-rev;
 }
 
 .search {
-  & ul {
+  & nav {
   display: $flex-dsp;
   flex-direction: row;
   justify-content: space-between;
   }
-
+}
+footer {
+  & ul {
+  display: $flex-dsp;
+  flex-direction: row;
+  justify-content: space-between;
+  } 
 }

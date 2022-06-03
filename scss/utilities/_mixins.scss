@@ -5,3 +5,16 @@
 @mixin center {
   margin: 0 auto;
 }
+
+@mixin flex-row {
+  display: $flex-dsp;
+  flex-direction: row;
+}
+@mixin flex-col {
+  display: $flex-dsp;
+  flex-direction: column;
+}
+@mixin flex-col-rev {
+  display: $flex-dsp;
+  flex-direction: column-reverse;
+}

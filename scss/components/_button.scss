@@ -2,6 +2,16 @@
         BUTTONS
 ======================================*/
 
-.cart {
-  background-color: red;
+.shopping-cart {
+  background-color: #FA2010;
+  width: 20%;
+  min-width: 50px;
+  padding: .5rem;
+  margin-left: auto;
+}
+
+svg {
+  width: 100%;
+  @include center;
+  display: inline-block;
 }

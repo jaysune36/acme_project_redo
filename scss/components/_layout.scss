@@ -1,0 +1,36 @@
+/*=====================================
+        LAYOUT
+======================================*/
+
+.contain {
+  width: 95%;
+  @include center;
+}
+header,
+footer {
+  background-color: $primary-color;
+}
+header {
+  border-bottom: 4px dotted #000;
+}
+footer {
+  border-top: 4px dotted #000;
+}
+.logo-cart {
+  margin: 1rem 0;
+}
+.search {
+  & nav {
+  width: 70%;
+  @include center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  }
+}
+footer {
+  & ul {
+  width: 50%;
+  @include center;
+  margin-top: 1rem;
+  }
+}
