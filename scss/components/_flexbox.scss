@@ -1,0 +1,18 @@
+/*=====================================
+        FLEXBOX
+======================================*/
+
+.flex-space {
+  display: $flex-dsp;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search {
+  & ul {
+  display: $flex-dsp;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+}

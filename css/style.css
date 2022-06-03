@@ -5,6 +5,12 @@
         UTILITIES PARTIALS
 ======================================*/
 /*=====================================
+        VARIABLES
+======================================*/
+/*=====================================
+        MIXINS
+======================================*/
+/*=====================================
         BASE PARTIALS
 ======================================*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -347,7 +353,87 @@ template {
 }
 
 /*=====================================
+        BASE STYLES
+======================================*/
+* {
+  box-sizing: border-box;
+}
+* ul {
+  padding-inline-start: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*=====================================
         COMPENENTS PARTIALS
 ======================================*/
+/*=====================================
+        IMAGES
+======================================*/
+img {
+  width: 100%;
+}
+
+/*=====================================
+        BUTTONS
+======================================*/
+.cart {
+  background-color: red;
+}
+
+/*=====================================
+        Grid
+======================================*/
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+}
+
+/*=====================================
+        FLEXBOX
+======================================*/
+.flex-space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*=====================================
+        MEDIA QUERIES
+======================================*/
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .main-grid {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

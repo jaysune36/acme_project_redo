@@ -1,0 +1,22 @@
+/*=====================================
+        BASE STYLES
+======================================*/
+
+* {
+  box-sizing: border-box;
+  & ul {
+    padding-inline-start: 0;
+  }
+}
+
+body {
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  width: 90%;
+  @include center;
+}
+
+ul {
+  list-style-type: none;
+}
+

@@ -1,0 +1,25 @@
+/*=====================================
+        MEDIA QUERIES
+======================================*/
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: 
+      'header header'
+      'main main'
+      'footer footer'
+    ;
+  }
+  header {
+    grid-area: header;
+  }
+  
+  .main-grid {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+}
