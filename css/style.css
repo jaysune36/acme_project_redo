@@ -379,8 +379,9 @@ nav {
         LAYOUT
 ======================================*/
 .contain {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
+  text-align: left;
 }
 
 header,
@@ -406,11 +407,68 @@ footer {
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
+.search input {
+  border: none;
+  font-size: 1.5rem;
+  width: 50%;
+}
+.search .search-bar {
+  margin: 0 auto;
+}
+
+.sales-timer {
+  background-color: #A8C5D5;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+.sales-timer .sales-btn-contain p, .sales-timer .sales-btn-contain h2 {
+  margin: 0;
+}
+.sales-timer .timer {
+  position: relative;
+}
+.sales-timer .timer img {
+  position: relative;
+}
+.sales-timer .count {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25%;
+}
+.sales-timer .count p {
+  text-align: center;
+  font-size: 2em;
+  color: #D84035;
+}
+
+.ship {
+  border: 2px dotted #000;
+  padding: 1rem;
+}
+.ship h2, .ship p {
+  margin: 0;
+}
+
+.new {
+  margin: 1rem 0;
+}
+.new h3, .new p {
+  margin: 0;
+}
 
 footer ul {
   width: 50%;
   margin: 0 auto;
   margin-top: 1rem;
+}
+
+.align-left h1 {
+  margin-bottom: 0;
+}
+.align-left p {
+  margin-top: 0.25rem;
 }
 
 /*=====================================
@@ -423,12 +481,25 @@ img {
 /*=====================================
         BUTTONS
 ======================================*/
+button {
+  background-color: #D84035;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+}
+
 .shopping-cart {
-  background-color: #FA2010;
+  background-color: #D84035;
   width: 20%;
   min-width: 50px;
   padding: 0.5rem;
   margin-left: auto;
+}
+
+.search-bar button {
+  background-color: #000;
+  padding: 0.25rem;
+  font-size: 0.75rem;
 }
 
 svg {
@@ -468,11 +539,30 @@ svg {
   flex-direction: row;
   justify-content: space-between;
 }
+.search .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
+.latest-img {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
 footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+footer p {
+  text-align: center;
 }
 
 /*=====================================

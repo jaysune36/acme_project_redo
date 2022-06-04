@@ -3,8 +3,9 @@
 ======================================*/
 
 .contain {
-  width: 95%;
+  width: 90%;
   @include center;
+  text-align: left;
 }
 header,
 footer {
@@ -26,11 +27,70 @@ footer {
   margin-top: 1rem;
   padding-bottom: 1rem;
   }
+  & input {
+    border: none;
+    font-size: 1.5rem;
+    width: 50%
+  }
+  & .search-bar {
+    @include center;
+  }
+}
+.sales-timer {
+  background-color: $timer-bg-color;
+  padding: 1rem;
+  @include center;
+  margin-bottom: .5rem;
+  & .sales-btn-contain p,
+  & .sales-btn-contain h2 {
+    margin: 0;
+  }
+  & .timer {
+    position: relative;
+  }
+  & .timer img {
+    position: relative;
+  }
+  & .count{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 25%;
+  }
+  & .count p {
+    text-align: center;
+    font-size: 2em;
+    color: $primary-btn-color;
+  }
+}
+.ship {
+  border: 2px dotted $black;
+  padding: 1rem;
+  & h2,
+  & p {
+    margin: 0;
+  }
+}
+.new {
+  margin: 1rem 0;
+  & h3,
+  & p {
+    margin: 0;
+  }
 }
 footer {
   & ul {
   width: 50%;
   @include center;
   margin-top: 1rem;
+  }
+}
+
+.align-left {
+  & h1 {
+    margin-bottom: 0;
+  }
+  & p {
+    margin-top: .25rem;
   }
 }

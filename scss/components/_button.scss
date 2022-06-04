@@ -1,15 +1,26 @@
 /*=====================================
         BUTTONS
 ======================================*/
-
+button {
+  background-color: $primary-btn-color;
+  color: $white;
+  border: none;
+  padding: 1rem;
+}
 .shopping-cart {
-  background-color: #FA2010;
+  background-color: #D84035;
   width: 20%;
   min-width: 50px;
   padding: .5rem;
   margin-left: auto;
 }
-
+.search-bar{
+  & button {
+    background-color: $black;
+    padding: .25rem;
+    font-size: .75rem;
+  }
+}
 svg {
   width: 100%;
   @include center;
