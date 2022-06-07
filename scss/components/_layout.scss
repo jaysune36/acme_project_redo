@@ -26,6 +26,7 @@ footer {
   @include center;
   margin-top: 1rem;
   padding-bottom: 1rem;
+  font-size: .9rem;
   }
   & input {
     border: none;
@@ -34,6 +35,13 @@ footer {
   }
   & .search-bar {
     @include center;
+  }
+  // & [type=search]::placeholder {
+  //   font-size: 1rem;
+  // }
+  & input {
+    font-size: 1rem;
+    padding: .25rem;
   }
 }
 .sales-timer {
@@ -45,12 +53,6 @@ footer {
   & .sales-btn-contain h2 {
     margin: 0;
   }
-  // & .timer {
-  //   position: relative;
-  // }
-  // & .timer img {
-  //   position: relative;
-  // }
   & .count{
     @include center;
     display: flex;
@@ -62,7 +64,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
-    max-width: 400px;
+    max-width: 325px;
   }
   & .count p {
     display: block;
@@ -85,7 +87,7 @@ footer {
 }
 .new {
   margin: 1rem 0;
-  & h3,
+  & h2,
   & p {
     margin: 0;
   }

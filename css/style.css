@@ -363,7 +363,6 @@ template {
 }
 
 body {
-  text-align: center;
   font-family: "Barlow", sans-serif;
 }
 
@@ -406,6 +405,7 @@ footer {
   margin: 0 auto;
   margin-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 .search input {
   border: none;
@@ -414,6 +414,10 @@ footer {
 }
 .search .search-bar {
   margin: 0 auto;
+}
+.search input {
+  font-size: 1rem;
+  padding: 0.25rem;
 }
 
 .sales-timer {
@@ -436,7 +440,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   height: 150px;
-  max-width: 400px;
+  max-width: 325px;
 }
 .sales-timer .count p {
   display: block;
@@ -460,7 +464,7 @@ footer {
 .new {
   margin: 1rem 0;
 }
-.new h3, .new p {
+.new h2, .new p {
   margin: 0;
 }
 
