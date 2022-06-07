@@ -12,7 +12,9 @@
 .flex-col {
   @include flex-col-rev;
 }
-
+.sales-timer {
+  @include flex-col;
+}
 .search {
   & nav {
   display: $flex-dsp;

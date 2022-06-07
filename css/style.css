@@ -425,20 +425,26 @@ footer {
 .sales-timer .sales-btn-contain p, .sales-timer .sales-btn-contain h2 {
   margin: 0;
 }
-.sales-timer .timer {
-  position: relative;
-}
-.sales-timer .timer img {
-  position: relative;
-}
 .sales-timer .count {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../../images/timer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  max-width: 400px;
 }
 .sales-timer .count p {
+  display: block;
+  width: 100%;
+  padding-top: 1.5rem;
   text-align: center;
+  position: absolute;
+  margin: 0;
   font-size: 2em;
   color: #D84035;
 }
@@ -532,6 +538,11 @@ svg {
 .flex-col {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.sales-timer {
+  display: flex;
+  flex-direction: column;
 }
 
 .search nav {
