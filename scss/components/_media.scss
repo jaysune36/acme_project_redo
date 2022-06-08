@@ -22,4 +22,62 @@
   footer {
     grid-area: footer;
   }
+  .logo-cart {
+    & .shopping-cart {
+      @include flex-row;
+      align-items: center;
+      width: 100%;
+      max-height: 40px;
+    }
+    & .shopping-cart svg {
+      max-width: 25px;
+    }
+    & .shopping-cart p {
+      display: block;
+      color: $white;
+    }
+  }
+  .col {
+    & .ship {
+      position: absolute;
+      z-index: 1;
+      right: 5%;
+      background-color: white;
+      margin: 1rem;
+      width: 300px;
+    }
+    & img {
+      position: relative;
+    }
+  }
+  .flex-col {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    & nav {
+      width: 30%;
+      padding-bottom: 0;
+    }
+    & nav,
+    & .search-bar {
+      margin: 0;
+    }
+  }
+  .sales-timer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 130px;
+    padding-bottom: 0;
+    .timer {
+      overflow: hidden;
+    }
+    & .count {
+      min-width: 300px;
+      height: 100%;
+    }
+  }
+  .latest-img {
+    flex-direction: row;
+  }
 }

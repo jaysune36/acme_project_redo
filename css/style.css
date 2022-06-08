@@ -399,6 +399,12 @@ footer {
 .logo-cart {
   margin: 1rem 0;
 }
+.logo-cart img {
+  max-width: 400px;
+}
+.logo-cart .shopping-cart p {
+  display: none;
+}
 
 .search nav {
   width: 70%;
@@ -441,6 +447,7 @@ footer {
   background-position: center;
   height: 150px;
   max-width: 325px;
+  overflow: hidden;
 }
 .sales-timer .count p {
   display: block;
@@ -599,6 +606,65 @@ footer p {
 
   footer {
     grid-area: footer;
+  }
+
+  .logo-cart .shopping-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-height: 40px;
+  }
+  .logo-cart .shopping-cart svg {
+    max-width: 25px;
+  }
+  .logo-cart .shopping-cart p {
+    display: block;
+    color: #fff;
+  }
+
+  .col .ship {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    background-color: white;
+    margin: 1rem;
+    width: 300px;
+  }
+  .col img {
+    position: relative;
+  }
+
+  .flex-col {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .flex-col nav {
+    width: 30%;
+    padding-bottom: 0;
+  }
+  .flex-col nav, .flex-col .search-bar {
+    margin: 0;
+  }
+
+  .sales-timer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 130px;
+    padding-bottom: 0;
+  }
+  .sales-timer .timer {
+    overflow: hidden;
+  }
+  .sales-timer .count {
+    min-width: 300px;
+    height: 100%;
+  }
+
+  .latest-img {
+    flex-direction: row;
   }
 }
 

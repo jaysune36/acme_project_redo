@@ -19,6 +19,12 @@ footer {
 }
 .logo-cart {
   margin: 1rem 0;
+  & img {
+    max-width: 400px;
+  }
+  & .shopping-cart p {
+    display: none;
+  }
 }
 .search {
   & nav {
@@ -65,6 +71,7 @@ footer {
     background-position: center;
     height: 150px;
     max-width: 325px;
+    overflow: hidden;
   }
   & .count p {
     display: block;
