@@ -1,7 +1,17 @@
+
+
 document.addEventListener('DOMContentLoaded', ()=> {
   let countTag = document.querySelector('.count p');
   const navHead = document.querySelector('nav');
+  const search = document.getElementById('search-bar');
   let count = 100;
+  
+  fetch('./app.json')
+    .then(response => {
+      return response.json();
+    })
+    .then(response => console.log(response))
+    .catch(err=>console.log(err));
 
   /** 
    * Will remove call classNames from the selected target, does not remove a single className only for list
@@ -25,6 +35,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
   }, 1000);
 
+
+  window.addEventListener('mouseup', (e)=> {
+    if(e.target != navHead && e.target.parentNode != navHead) {
+      const dropDownULs = navHead.querySelectorAll('li ul');
+      removeClassNameAll(dropDownULs);
+    }
+    if(e.target != search && e.target.parentNode != search) {
+      document.getElementById('search-value').removeAttribute('style');
+    }
+  });
+
   navHead.addEventListener('click', (e)=> {
     let target = e.target
     if(target.tagName === 'SPAN') {
@@ -41,6 +62,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
     }
   }
+  })
+  search.addEventListener('click', (e)=> {
+    let target = e.target;
+    if(target.tagName === 'INPUT') {
+    if(!target.style.boxShadow) {
+    target.style.boxShadow = '0px 0px 4px 1px #D84035';
+    }
+  }
+  });
+  search.addEventListener('keyup', (e)=> {
+    let target=e.target;
+    if(target.value) {
+      
+    }
   })
 
 })

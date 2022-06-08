@@ -424,6 +424,10 @@ footer {
 .search input {
   font-size: 1rem;
   padding: 0.25rem;
+  outline: none;
+}
+.searchinput:focus {
+  box-shadow: 0px 0px 4px 1px #D84035;
 }
 
 .sales-timer {
