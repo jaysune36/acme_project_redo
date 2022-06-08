@@ -1,0 +1,32 @@
+/*=====================================
+        DROPDOWN
+======================================*/
+
+nav {
+  & li {
+    position: relative;
+  }
+  & ul {
+    display: none;
+    position: absolute;
+    background-color: $primary-color;
+    border: 4px dotted $black;
+    border-top: none;
+    margin-top: 1.25rem;
+    padding: 1rem;
+  }
+  & ul li {
+    padding-bottom: .5rem;
+  }
+  & ul li:last-child {
+    padding-bottom: 0;
+  }
+  & li:hover span{
+    color: $primary-btn-color;
+    border-bottom: 1px solid $primary-btn-color;
+  }
+}
+
+.visible {
+  display: block;
+}
