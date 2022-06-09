@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let countTag = document.querySelector('.count p');
   const navHead = document.querySelector('nav');
   const search = document.getElementById('search-bar');
+  const searchBox = search.querySelector('.search-box');
+  const searchUl = searchBox.querySelector('ul');
   let count = 100;
   const searchArr = [];
 
@@ -36,16 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   countTag.innerText = count;
-  setInterval(() => {
+  const intervalTimer = setInterval(countDown, 1000);
+
+  function countDown() {
     count -= 1;
     countTag.innerText = count;
-    if (count < 1) {
-      count = 100;
-      // Will keep this code, might decide to kill internval after 100 secs has passed
-      //@clearInterval()
+    if(count === 0 ){
+      clearInterval(intervalTimer);
     }
-  }, 1000);
-
+  };
 
   window.addEventListener('mouseup', (e) => {
     // Closes dropdown menu if clicked outside of drop down
@@ -56,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Closes search dropdown menu if clicked outside of search
     if (e.target != search && e.target.parentNode != search) {
       document.getElementById('search-value').removeAttribute('style');
-      search.querySelector('.search-box ul').style.display = 'none';
-      search.querySelector('.search-box ul').innerHTML = '';
+      searchUl.style.display = 'none';
+      searchUl.innerHTML = '';
     }
   });
 
@@ -88,8 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   search.addEventListener('keyup', (e) => {
     let target = e.target;
-    const searchBox = search.querySelector('.search-box');
-    const searchUl = searchBox.querySelector('ul');
     if (searchBox.querySelector('input').value) {
       searchUl.style.display = 'block';
       if(searchUl.childElementCount === 10) {
