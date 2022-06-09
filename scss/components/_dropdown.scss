@@ -27,6 +27,23 @@ nav {
   }
 }
 
+.search-box {
+  position: relative;
+  & ul {
+    position: absolute;
+    background-color: $primary-color;
+    border: 4px dotted $black;
+    border-top: none;
+    z-index: 1;
+  }
+  & ul li {
+    padding-bottom: .5rem;
+  }
+  & input {
+    width: 100%;
+  }
+}
+
 .visible {
   display: block;
 }

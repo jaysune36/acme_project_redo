@@ -5,13 +5,21 @@ document.addEventListener('DOMContentLoaded', ()=> {
   const navHead = document.querySelector('nav');
   const search = document.getElementById('search-bar');
   let count = 100;
-  
-  fetch('./app.json')
-    .then(response => {
-      return response.json();
+  const searchArr = [];
+
+  function generateDir(data) {
+    data.map((searchValue) => {
+      let itemName = searchValue.name;
+      searchArr.push(itemName);
     })
-    .then(response => console.log(response))
+  }
+
+  fetch("../app.json")
+    .then(data => data.json())
+    .then(generateDir)
     .catch(err=>console.log(err));
+
+  console.log(searchArr);
 
   /** 
    * Will remove call classNames from the selected target, does not remove a single className only for list
@@ -73,9 +81,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
   });
   search.addEventListener('keyup', (e)=> {
     let target=e.target;
-    if(target.value) {
-      
-    }
+    for(let i=0;i<searchArr.length;i++){
+      let arrItem = searchArr[i];
+      if(arrItem.toLowerCase().includes(target.value)) {
+        let dropdownItem = '';
+        dropdownItem += arrItem;
+        console.log(dropdownItem);
+      }
+  }
   })
 
 })

@@ -588,6 +588,23 @@ nav li:hover span {
   border-bottom: 1px solid #D84035;
 }
 
+.search-box {
+  position: relative;
+}
+.search-box ul {
+  position: absolute;
+  background-color: #c4c4c4;
+  border: 4px dotted #000;
+  border-top: none;
+  z-index: 1;
+}
+.search-box ul li {
+  padding-bottom: 0.5rem;
+}
+.search-box input {
+  width: 100%;
+}
+
 .visible {
   display: block;
 }
@@ -665,6 +682,7 @@ footer p {
 
   header {
     grid-area: header;
+    padding-bottom: 1rem;
   }
 
   .main-grid {
@@ -706,7 +724,6 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
   }
   .flex-col nav {
     width: 30%;
