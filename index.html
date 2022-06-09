@@ -35,7 +35,7 @@
                   fill='#fff' fill-rule='nonzero' />
               </g>
             </svg>
-          <p>Shopping Cart</p>
+            <p>Shopping Cart</p>
           </div>
           <!--/ Shopping Cart Container -->
         </div>
@@ -51,7 +51,8 @@
               <li>NITROGLYCERIN</li>
               <li>DYNAMITE</li>
               <li>DETONATORS</li>
-            </ul></li>
+            </ul>
+          </li>
           <li>
             <span>ACCESSORIES</span>
             <ul class="acc-ul">
@@ -61,7 +62,8 @@
               <li>WATER-RESISTANT ITEMS</li>
               <li>SUNGLASSES</li>
               <li>2022 FIRST-AID KITS</li>
-            </ul></li>
+            </ul>
+          </li>
           <li>
             <span>SALE</span>
             <ul class="sale-ul">
@@ -70,21 +72,16 @@
               <li>SHOES</li>
               <li>ROADRUNNER FOOD</li>
               <li>VINTAGE ITEMS</li>
-            </ul></li>
+            </ul>
+          </li>
         </nav>
         <div id="search-bar" class="search-bar">
           <!-- Search Value is a place holder for now as I will change this to an SVG -->
           <label for="search-value">Search</label>
           <div class="search-box">
-          <input type="search" name="search-value" id="search-value" placeholder="anvils, dynamite, rockets, etc...">
-          <!-- Placeholder ul list, using for design then will use js to display and insert -->
-          <ul class="sale-ul">
-            <li>1990 FIRST-AID KITS</li>
-            <li>UNEXPLODED DYNAMITE</li>
-            <li>SHOES</li>
-            <li>ROADRUNNER FOOD</li>
-            <li>VINTAGE ITEMS</li>
-          </ul>
+            <input type="search" name="search-value" id="search-value" placeholder="anvils, dynamite, rockets, etc...">
+            <!-- LI items will be injected using JS and will display JSON compared items when searched -->
+            <ul></ul>
           </div>
           <button>Search</button>
         </div>

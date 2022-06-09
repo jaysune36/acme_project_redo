@@ -592,14 +592,19 @@ nav li:hover span {
   position: relative;
 }
 .search-box ul {
+  display: none;
   position: absolute;
+  top: 10px;
   background-color: #c4c4c4;
   border: 4px dotted #000;
   border-top: none;
-  z-index: 1;
+  z-index: 2;
 }
 .search-box ul li {
-  padding-bottom: 0.5rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+.search-box ul li:first-child {
+  padding-top: 0.5rem;
 }
 .search-box input {
   width: 100%;
