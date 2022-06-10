@@ -66,15 +66,22 @@
     }
   }
   .sales-timer {
+    height: 120px;
+    padding: 0;
+    overflow: hidden;
+    & .sales-contain {
     flex-direction: row;
-    justify-content: space-between;
-    height: 130px;
-    padding-bottom: 0;
-    .timer {
-      overflow: hidden;
+    height: 100%;
+    }
+    & .sales-btn-contain {
+      padding: .5rem 0 1rem 1rem;
+      height: auto;
     }
     & .count {
+      margin: 0;
+      margin-left: auto;
       min-width: 300px;
+      justify-content: flex-end;
       height: 100%;
     }
   }

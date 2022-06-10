@@ -12,7 +12,7 @@
 .flex-col {
   @include flex-col-rev;
 }
-.sales-timer {
+.sales-contain {
   @include flex-col;
 }
 .search {

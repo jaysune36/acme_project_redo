@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const search = document.getElementById('search-bar');
   const searchBox = search.querySelector('.search-box');
   const searchUl = searchBox.querySelector('ul');
-  let count = 100;
+  const salesTimer = document.querySelector('.sales-timer');
+  let count = 5;
   const searchArr = [];
 
   /**
@@ -45,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
     countTag.innerText = count;
     if(count === 0 ){
       clearInterval(intervalTimer);
+      const overlay = salesTimer.querySelector('.overlay');
+      overlay.style.transition = 'opacity 1s ease-in-out'
+      overlay.style.display = 'block';
     }
   };
 
